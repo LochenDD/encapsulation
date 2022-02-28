@@ -1,5 +1,9 @@
 # encapsulation
 
+```
+基于vue2的组件或库二次封装, views中有基本的使用demo
+```
+
 ## Project setup
 ```
 yarn install
