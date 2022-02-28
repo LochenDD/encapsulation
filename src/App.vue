@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <RouterLink to="/chartDemo">Echarts示例</RouterLink>
+      <RouterLink to="/remoteSelectDemo">远程搜索Select示例</RouterLink>
     </div>
     <router-view/>
   </div>
@@ -23,6 +23,7 @@
   a {
     font-weight: bold;
     color: #2c3e50;
+    margin-right: 20px;
 
     &.router-link-exact-active {
       color: #42b983;
