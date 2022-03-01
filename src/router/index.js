@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ChartDemo from '../views/ChartsDemo.vue'
-
+import PaginationDemo from '../views/PaginationDemo.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -18,6 +18,11 @@ const routes = [
     path: '/remoteSelectDemo',
     name: 'remoteSelectDemo',
     component: () => import('@/views/RemoteSelectDemo')
+  },
+  {
+    path: '/paginationDemo',
+    name: 'paginationDemo',
+    component: PaginationDemo
   }
 ]
 

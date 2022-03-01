@@ -3,6 +3,7 @@
     <div id="nav">
       <RouterLink to="/chartDemo">Echarts示例</RouterLink>
       <RouterLink to="/remoteSelectDemo">远程搜索Select示例</RouterLink>
+      <RouterLink to="/paginationDemo">el分页二次封装</RouterLink>
     </div>
     <router-view/>
   </div>
