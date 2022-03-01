@@ -51,7 +51,16 @@
       </el-table-column>
     </el-table>
 
-    <Pagination :page.sync="page" :size.sync="size" @pagination="getList" autoScroll :total="total" ></Pagination>
+    <Pagination
+      :pageSizes="[1,2,3]"
+      background
+      :page.sync="page"
+      :size.sync="size"
+      @pagination="getList"
+      autoScroll
+      :total="total"
+      layout="sizes, prev, pager, next, jumper, ->, total, slot"
+    ></Pagination>
   </div>
 </template>
 

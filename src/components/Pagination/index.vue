@@ -1,13 +1,14 @@
 <template>
     <el-pagination
       :background="background"
-      layout="prev, pager, next"
+      :layout="layout"
       :total="total"
       :current-page.sync="currentPage"
       @current-change="currentChange"
       :page-size.sync="pageSize"
       @size-change="sizeChange"
       :disabled="disabled"
+      :pageSizes="pageSizes"
     />
 </template>
 
