@@ -12,6 +12,7 @@
         :loading-text="loadingText"
         :disabled="disabled"
         :clearable="clearable"
+        @change="handleChange"
     >
         <el-option
             v-for="item in options"
@@ -70,6 +71,9 @@ export default {
     }
   },
   methods: {
+    handleChange (value) {
+      this.$emit('change', value)
+    },
     handleInput (value) {
       this.$emit('input', value)
     },
